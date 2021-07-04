@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #c0c4cc;
+    margin: 0 1rem;
+    padding: 1rem 0;
+    &__input {
+        background: url('../../images/search-icon.svg') no-repeat scroll 7px 7px;
+        padding: 0.5rem 1.5rem;
+        border: 1px solid #c0c4cc;
+        border-radius: 4px;
+        width: 150px;
+    }
+}
+
+@media only screen and (min-width: 768px ) {
+    .header {
+        margin:  0rem 4rem;
+        &__input {
+            display: flex;
+            width: initial;
+        }
+    }
+}
