@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React, { useCallback } from 'react'
 import axios from 'axios'
 import logo from '../../images/logo.svg'
 import { debounce } from '../../utils'
@@ -6,6 +6,7 @@ import './index.scss'
 
 
 const Header = ({ setMovies, searchQuery, setSearchQuery }) => {
+     // eslint-disable-next-line
     const searchMovies = useCallback(
        debounce(async (query) => {
            if(query !== ''){

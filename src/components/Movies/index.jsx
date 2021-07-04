@@ -6,7 +6,7 @@ const Movies = ({ movies, searchQuery, fetchData, setSelectedMovie, setVisible }
     return (
         <div className="movies-container">
             <h3 className="movies-container__title">{ searchQuery ? `Showing results for '${searchQuery}'` : 'Most Recent Movies' }</h3>
-            {searchQuery && movies.length == 0 ? 
+            {searchQuery && movies.length === 0 ? 
             <div className="movies-container__empty-state">
                 <div>
                     <div>{`No result  for ${searchQuery}`}</div>
